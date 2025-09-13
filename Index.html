@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnMathes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="sidebar-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="url(#grad1)" stroke="#fff" stroke-width="5"/>
+            <path d="M30 40 L50 20 L70 40 L70 70 L30 70 Z" fill="#fff"/>
+            <circle cx="50" cy="35" r="8" fill="url(#grad2)"/>
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+        <h1>Smart Mathematics with Kamal Bandara</h1>
+    </header>
+    <div class="container">
+        <main>
+            <section id="grades-container">
+                <h2>Select a Grade</h2>
+                <div class="grades-grid">
+                    <div class="grade-card" onclick="showGradeVideos('grade-6')">Grade 6</div>
+                    <div class="grade-card" onclick="showGradeVideos('grade-7')">Grade 7</div>
+                    <div class="grade-card" onclick="showGradeVideos('grade-8')">Grade 8</div>
+                    <div class="grade-card" onclick="showGradeVideos('grade-9')">Grade 9</div>
+                    <div class="grade-card" onclick="showGradeVideos('grade-10')">Grade 10</div>
+                    <div class="grade-card" onclick="showGradeVideos('grade-11')">Grade 11</div>
+                </div>
+            </section>
+            <section id="grade-6" class="grade-section">
+                <h3>Grade 6 Videos</h3>
+                <div class="videos" id="videos-grade-6"></div>
+            </section>
+            <section id="grade-7" class="grade-section">
+                <h3>Grade 7 Videos</h3>
+                <div class="videos" id="videos-grade-7"></div>
+            </section>
+            <section id="grade-8" class="grade-section">
+                <h3>Grade 8 Videos</h3>
+                <div class="videos" id="videos-grade-8"></div>
+            </section>
+            <section id="grade-9" class="grade-section">
+                <h3>Grade 9 Videos</h3>
+                <div class="videos" id="videos-grade-9"></div>
+            </section>
+            <section id="grade-10" class="grade-section">
+                <h3>Grade 10 Videos</h3>
+                <div class="videos" id="videos-grade-10"></div>
+            </section>
+            <section id="grade-11" class="grade-section">
+                <h3>Grade 11 Videos</h3>
+                <div class="videos" id="videos-grade-11"></div>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>User</h3>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+            <div class="sidebar-section">
+                <h3>Admin</h3>
+                <a href='/addmin'>Login as Admin</a>
+            </div>
+            <div class="sidebar-section">
+                <h3>Contact Developer</h3>
+                <p>Email: udmodzz@gmail.com</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy;<a href="https://www.whatsapp.com/channel/0029VbAwZeh59PwXq4Oxow3a" target="_blank" >Cyber Shagi</a> 2023-2025. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
